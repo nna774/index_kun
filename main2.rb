@@ -37,12 +37,12 @@ end
 
 module IndexKun
   class FileRecorder
-		def initialize(content)
-			@content = content
-		end
-		def record(path:)
-			File.write(path, @content)
-		end
+    def initialize(content)
+      @content = content
+    end
+    def record(path:)
+      File.write(path, @content)
+    end
   end
 end
 
