@@ -1,0 +1,8 @@
+!!! 5
+%title= "index of #{prefix}"
+
+%h1= prefix
+%ul
+  - files.each do |file|
+    %li<
+      %a{ href: file[:name] }= file[:name]
